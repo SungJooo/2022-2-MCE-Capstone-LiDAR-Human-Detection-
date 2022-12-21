@@ -1,5 +1,7 @@
 # 2022-2 HGU-MCE Capstone "3D-LiDAR based Human Detection"
 
+<img src=".\readmeResources.gif" alt="demo" style="zoom:100%;" />
+
 ## Introduction
 
 ​	This repository contains how to train PointPillars[1] model with 3D LiDAR sensor data and utilize it for danger zone proximity warnings. We implemented a warning system at the smart factory which detects a worker who proximates to the hazardous zone.
@@ -56,7 +58,7 @@ outputFolder = fullfile(tempdir,'TrainResult');
 
 ## Part 2. Detecting
 
-​	After the part 1 is over, we need to move onto the next part, which is detecting the human. We give you the sample point cloud frame data to test our algorithm. The file 'Detector.mat' is the trained model through the above step. The only thing you have to do is execute the whole file named 'main.m'. After that, you can see the result alike the above.
+​	After the part 1 is over, we need to move onto the next part, which is detecting the human. We give you the sample point cloud frame data to test our algorithm. The file 'Detector.mat' is the trained model through the above step. The only thing you have to do is execute the whole file named 'main.m'. After that, you can see the figures. First figure is the point cloud plot with the cuboids which presents the detected human. Another figure is the bird eye view plot, which shows the position of the human, and indicates whether the human proximates to the danger zone or not.
 
 
 
